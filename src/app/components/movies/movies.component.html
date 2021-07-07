@@ -1,0 +1,6 @@
+<app-movie-sorter></app-movie-sorter>
+<div>
+  <div *ngFor="let movie of movies$ | async">
+    <span>{{ movie.title }} by {{ movie.director }} in {{ movie.yearReleased }}</span>
+  </div>
+</div>

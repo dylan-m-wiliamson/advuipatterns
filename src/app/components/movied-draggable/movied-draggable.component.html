@@ -1,0 +1,9 @@
+<div cdkDropList
+     (cdkDropListDropped)="drop($event)"
+     class="example-list">
+  <div class="example-box"
+       cdkDrag
+       *ngFor="let movie of movies$ | async">
+    {{ movie?.title }} by {{ movie?.director }} in {{ movie?.yearReleased }}
+  </div>
+</div>
